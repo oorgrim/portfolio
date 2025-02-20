@@ -1,0 +1,38 @@
+.terminal-container {
+  width: 600px;
+  height: 400px;
+  background: black;
+  color: lime;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  box-shadow: 0px 0px 20px lime;
+}
+
+.terminal-screen {
+  height: 90%;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+}
+
+.terminal-input .prompt {
+  color: lime;
+  font-weight: bold;
+}
+
+.terminal-input input {
+  background: none;
+  border: none;
+  color: lime;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
