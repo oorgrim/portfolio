@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Desktop from "./components/Desktop";
 import Terminal from "./components/Terminal";
-import Projects from "./components/Projects";
+import Projects from "./components/ProjectsWindow";
 
 function App() {
   const [isTerminalOpen, setTerminalOpen] = useState(false);

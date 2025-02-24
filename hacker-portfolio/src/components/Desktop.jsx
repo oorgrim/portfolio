@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/desktop.css";
+import ProjectsWindow from "./ProjectsWindow";
 
-const Desktop = ({ openTerminal, openProjects }) => {
+const Desktop = ({ openTerminal }) => {
   const [time, setTime] = useState("");
+  const [windows, setWindows] = useState([]);
+  const [zIndexCounter, setZIndexCounter] = useState(1);
 
   useEffect(() => {
     const updateTime = () => {
@@ -14,6 +17,27 @@ const Desktop = ({ openTerminal, openProjects }) => {
     return () => clearInterval(interval);
   }, []);
 
+  const openWindow = (windowType) => {
+    setZIndexCounter((prev) => prev + 1);
+    setWindows((prev) => [
+      ...prev,
+      { id: Date.now(), type: windowType, zIndex: zIndexCounter + 1 },
+    ]);
+  };
+
+  const closeWindow = (id) => {
+    setWindows((prev) => prev.filter((win) => win.id !== id));
+  };
+
+  const bringToFront = (id) => {
+    setZIndexCounter((prev) => prev + 1);
+    setWindows((prev) =>
+      prev.map((win) =>
+        win.id === id ? { ...win, zIndex: zIndexCounter + 1 } : win
+      )
+    );
+  };
+
   return (
     <div className="desktop">
       <div className="desktop-icons">
@@ -21,11 +45,22 @@ const Desktop = ({ openTerminal, openProjects }) => {
           <img src="/icons/terminal.svg" alt="Terminal" />
           <span>Terminal</span>
         </div>
-        <div className="icon" onClick={openProjects}>
+        <div className="icon" onClick={() => openWindow("projects")}>
           <img src="/icons/folder.png" alt="Projects" />
           <span>Projects</span>
         </div>
       </div>
+
+      {windows.map((win) =>
+        win.type === "projects" ? (
+          <ProjectsWindow
+            key={win.id}
+            closeWindow={() => closeWindow(win.id)}
+            bringToFront={() => bringToFront(win.id)}
+            zIndex={win.zIndex}
+          />
+        ) : null
+      )}
 
       <div className="taskbar">
         <div className="menu">

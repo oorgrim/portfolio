@@ -1,0 +1,137 @@
+.window {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.7);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    color: white;
+}
+
+.window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: linear-gradient(90deg, #333, #222);
+    color: #fff;
+    border-bottom: 2px solid #af4c9b;
+    font-size: 14px;
+    cursor: grab;
+}
+
+.close-btn {
+    background: #ff5555;
+    color: #fff;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    background: #ff2222;
+}
+
+.window-content {
+    flex: 1;
+    padding: 15px;
+    color: #ddd;
+    font-size: 14px;
+    overflow-y: auto;
+    font-family: "Courier New", monospace;
+}
+
+.window.dragging {
+    opacity: 0.7;
+}
+
+.window {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid #af4c99;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(175, 76, 162, 0.7);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    cursor: default;
+}
+
+.window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: linear-gradient(90deg, #333, #222);
+    color: #fff;
+    border-bottom: 2px solid #af4c93;
+    font-size: 14px;
+    cursor: grab;
+    user-select: none;
+}
+
+.window.dragging {
+    opacity: 0.7;
+}
+
+.window {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    min-height: 200px;
+    cursor: grab;
+}
+
+.window-header {
+    background: #222;
+    color: white;
+    padding: 10px;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-header:active {
+    cursor: grabbing;
+}
+
+.window-body {
+    padding: 15px;
+}
+
+.window {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid #af4c95;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(175, 76, 163, 0.7);
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.window:active {
+    box-shadow: 0px 0px 15px rgb(195, 138, 185);
+}
