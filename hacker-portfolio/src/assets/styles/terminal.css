@@ -59,3 +59,29 @@
   font-size: 16px;
   font-family: "Courier New", monospace;
 }
+
+
+@media (max-width: 600px) {
+  .terminal1 {
+    width: 70%;
+    height: 75%;
+    top: 2.5%;
+    left: 2.5%;
+    max-width: none;
+    max-height: none;
+  }
+
+  .terminal-body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .terminal-input input {
+    font-size: 14px;
+  }
+
+  .close-btn {
+    font-size: 14px;
+    padding: 5px;
+  }
+}

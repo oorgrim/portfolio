@@ -87,3 +87,43 @@ body {
   width: 5px;
   height: 5px;
 }
+
+.window {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  resize: both;
+  min-width: 300px;
+  min-height: 200px;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 60vw;
+  height: 60vh;
+}
+
+@media (max-width: 1024px) {
+  .window {
+    width: 80vw;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .window {
+    width: 95vw;
+    height: 70vh;
+    min-width: 280px;
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .window {
+    width: 98vw;
+    height: 75vh;
+    min-width: 250px;
+    min-height: 150px;
+  }
+}

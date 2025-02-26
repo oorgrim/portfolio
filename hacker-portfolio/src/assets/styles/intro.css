@@ -197,7 +197,6 @@ to {
 }
 }
 
-/* 💻 Большие экраны (от 1024px) */
 @media (min-width: 600px) and (max-width: 1024px) {
 .welcome-text {
     font-size: 1.5em;
