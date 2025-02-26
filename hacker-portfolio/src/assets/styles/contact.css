@@ -1,0 +1,83 @@
+.close-btn {
+    background: none;
+    border: none;
+    color: #ff5c5c;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #ff1e1e;
+    transform: scale(1.2);
+}
+
+.window-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.window-body li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.window-body li::before {
+    content: "•";
+    color: #ae1db9;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.window-body a {
+    color: #e075cd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.window-body a:hover {
+    color: #bb14be;
+    text-decoration: underline;
+    text-decoration: none;
+    }
+
+.contact-form {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-input {
+    width: 100%;
+    min-height: 60px;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    resize: none;
+    transition: border 0.2s ease-in-out;
+}
+
+.contact-input:focus {
+    outline: none;
+}
+
+.send-btn {
+    background: #b91d5b;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background: #1ed760;
+}

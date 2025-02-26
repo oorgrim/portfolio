@@ -2,10 +2,10 @@ import React, { useState, useRef, useEffect } from "react";
 import ProjectsWindow from "./ProjectsWindow";
 import ContactWindow from "./ContactWindow";
 import SkillsWindow from "./SkillsWindow";
-import AboutMeWindow from "./AboutMe";
+import AboutMe from "./AboutMe";
 import "../assets/styles/terminal.css";
 
-const Terminal = ({ closeTerminal }) => {
+const Terminal = ({ closeWindow }) => {
   const [output, setOutput] = useState([
     "Welcome to Tomi's Terminal!",
     "Type 'help' to see available commands",
@@ -94,7 +94,7 @@ const Terminal = ({ closeTerminal }) => {
           setInput("");
           return;
         case "exit":
-          closeTerminal();
+          closeWindow();
           return;
         default:
           response = `Command not found: ${command}`;
@@ -107,13 +107,13 @@ const Terminal = ({ closeTerminal }) => {
   return (
     <div className="terminal-overlay">
       <div
-        className="terminal"
+        className="terminal1"
         style={{ left: position.x, top: position.y, zIndex }}
         onMouseDown={bringToFront}
       >
         <div className="terminal-header" onMouseDown={handleMouseDown}>
           <span>🔲 Terminal</span>
-          <button className="close-btn" onClick={closeTerminal}>✖</button>
+          <button className="close-btn" onClick={closeWindow}>✖</button>
         </div>
         <div className="terminal-body">
           {output.map((line, index) => (
@@ -131,7 +131,7 @@ const Terminal = ({ closeTerminal }) => {
           />
         </div>
       </div>
-      {openWindows.aboutMe && <AboutMeWindow closeWindow={() => setOpenWindows((prev) => ({ ...prev, aboutMe: false }))} bringToFront={bringToFront} />}
+      {openWindows.aboutMe && <AboutMe closeWindow={() => setOpenWindows((prev) => ({ ...prev, aboutMe: false }))} bringToFront={bringToFront} />}
       {openWindows.projects && <ProjectsWindow closeWindow={() => setOpenWindows((prev) => ({ ...prev, projects: false }))} bringToFront={bringToFront} />}
       {openWindows.contact && <ContactWindow closeWindow={() => setOpenWindows((prev) => ({ ...prev, contact: false }))} bringToFront={bringToFront} />}
       {openWindows.skills && <SkillsWindow closeWindow={() => setOpenWindows((prev) => ({ ...prev, skills: false }))} bringToFront={bringToFront} />}

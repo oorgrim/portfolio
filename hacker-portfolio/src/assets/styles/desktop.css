@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
-  background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+  background-color: #151215;
   overflow-y: hidden;
   overflow-x: hidden;
+  font-size: 18px;
+  font-family: "Lato", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .desktop {
-  background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+  background-color: #151215;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -34,8 +40,8 @@ body {
 }
 
 .icon img {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 50px;
 }
 
 .icon:hover {
@@ -46,8 +52,8 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 35px;
-  background: rgba(255, 0, 127, 0.9);
+  height: 45px;
+  background: #C3677F;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,4 +80,10 @@ body {
 .clock {
   font-weight: bold;
   color: white;
+  margin-right: -500px;
+}
+
+.avatar {
+  width: 5px;
+  height: 5px;
 }

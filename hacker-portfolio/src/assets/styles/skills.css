@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.window-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.window-body::-webkit-scrollbar-thumb {
+    background: #b41db9;
+    border-radius: 3px;
+}
+
+.category-btn {
+    background: none;
+    border: none;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.category-btn:hover {
+    color: #df65b7;
+}
+
+.category-btn::before {
+    content: "▶";
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+}
+
+.category-btn.open::before {
+    content: "🔽";
+    transform: rotate(90deg);
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+.skill-desc {
+    color: #b3b3b3;
+    font-size: 18px;
+    font-size: 18px;
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(-5px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.skill-list {
+    animation: fadeIn 0.3s ease-in-out;
+}

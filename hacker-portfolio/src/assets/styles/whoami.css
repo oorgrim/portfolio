@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.text {
+    display: flex;
+}
+
+
+
+.window {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 900px;
+    height: 500px;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid #c0516e;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #a2566a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    color: white;
+}
+
+.myText {
+    width: 2000px;
+    margin-right: 200px;
+    font-size: 18px;
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.window-header {
+    background: #C3677F;
+    color: white;
+    padding: 8px 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+}
+
+.close-btn {
+    background: #ff0077;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.close-btn:hover {
+    background: #ff3388;
+}
+
+.window-body {
+    padding: 15px;
+    background: #1a1a1a;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.heart {
+    color: #ff0077;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.myText p {
+    margin: 5px 0;
+    color: #ffddff;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    color: #9b9b9b;
+}
+
+.education {
+    padding: 10px;
+    background: rgba(255, 0, 119, 0.1);
+    border-left: 3px solid #ff0077;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 0 5px rgba(255, 0, 119, 0.5);
+}
+
+.education h2 {
+    font-size: 16px;
+    color: #ff0077;
+    margin-bottom: 10px;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.year {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff66aa;
+    background: rgba(255, 0, 119, 0.2);
+    padding: 5px 8px;
+    border-radius: 3px;
+    min-width: 80px;
+    text-align: center;
+}
+
+.edu-details h3 {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.edu-details p {
+    margin-left: 20px;
+    font-size: 12px;
+    color: #cccccc;
+    margin-top: 2px;
+}
+
+.languages {
+    padding: 10px;
+    background: rgba(0, 255, 136, 0.1);
+    border-left: 3px solid #fb00ff;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+}
+
+.languages h2 {
+    font-size: 16px;
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+.language-item {
+    padding: 5px 0;
+}
+
+.lang {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(0, 255, 136, 0.2);
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.certificates {
+    padding: 10px;
+    background: rgba(255, 175, 0, 0.1);
+    border-left: 3px solid #ffaa00;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 0 5px rgba(255, 175, 0, 0.5);
+}
+
+.certificates h2 {
+    font-size: 16px;
+    color: #ffaa00;
+    margin-bottom: 10px;
+}
+
+.certificate-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.cert {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(255, 175, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.download-btn {
+    font-size: 12px;
+    color: #000;
+    background: #ffaa00;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #ff8800;
+}
+
+#scndBtn {
+    margin-left: 403px;
+}
+
+.experience {
+    padding: 10px;
+    background: rgba(0, 200, 255, 0.1);
+    border-left: 3px solid #00c8ff;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 0 5px rgba(0, 200, 255, 0.5);
+}
+
+.experience h2 {
+    font-size: 16px;
+    color: #00c8ff;
+    margin-bottom: 10px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.year {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgba(0, 200, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.exp-details h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.exp-details p {
+    font-size: 13px;
+    color: #dddddd;
+}
