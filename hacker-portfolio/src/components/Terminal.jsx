@@ -43,21 +43,12 @@ const Terminal = ({ closeWindow }) => {
 
   const handleMouseMove = (e) => {
     if (!dragging) return;
-  
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    const termWidth = 800;
-    const termHeight = 700;
-  
-    let newX = e.clientX - offset.current.x;
-    let newY = e.clientY - offset.current.y;
-  
-    newX = Math.max(0, Math.min(screenWidth - termWidth, newX));
-    newY = Math.max(0, Math.min(screenHeight - termHeight, newY));
-  
-    setPosition({ x: newX, y: newY });
+    setPosition({
+      x: e.clientX - offset.current.x,
+      y: e.clientY - offset.current.y,
+    });
   };
-  
+
   const handleMouseUp = () => {
     setDragging(false);
   };
