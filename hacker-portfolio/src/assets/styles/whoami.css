@@ -193,7 +193,6 @@ li {
 .download-btn {
     font-size: 12px;
     color: #000;
-    background: #ffaa00;
     padding: 5px 10px;
     border-radius: 3px;
     text-decoration: none;
@@ -201,7 +200,7 @@ li {
 }
 
 .download-btn:hover {
-    background: #ff8800;
+    background: #ffe3fb;
 }
 
 #scndBtn {
@@ -248,4 +247,9 @@ li {
 .exp-details p {
     font-size: 13px;
     color: #dddddd;
+}
+
+
+#characteristics {
+    margin-left: 30px;
 }

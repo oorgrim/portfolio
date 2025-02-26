@@ -27,13 +27,15 @@ const AboutMeWindow = ({ closeWindow }) => {
                 ▌░░░░▀░░░░ ▌
                 █▄▄▄▄▄▄▄▄▄█</p></div>
             
-            <div className="myText"><p>Hi, I’m Tomiris – a passionate and ambitious software developer focused on cybersecurity and cutting-edge tech. Studying Software Engineering at IT Step Academy, I’m mastering a wide range of skills, preparing for Cisco CCNA certification, and deepening my cybersecurity expertise.
-
-            My goal? To work at Google, innovate in security, and make a global impact to our world. I thrive on challenges, continuous learning, and pushing boundaries. Let’s build the future together
-
-            </p>
+            <div className="myText">            <p>Hi, I’m Tomiris – a passionate and ambitious software developer focused on cybersecurity and cutting-edge tech. Studying Software Engineering at IT Step Academy, I’m mastering a wide range of skills, preparing for Cisco CCNA certification, and deepening my cybersecurity expertise.</p>
             <br />
             <p>Age: 17</p>
+
+            <div className="download-buttons">
+                <a href="/files/resume.pdf" download className="download-btn">Download Resume</a>
+                <a href="/files/characteristics.pdf" id="characteristics" download className="download-btn">Download Characteristics</a>
+            </div>
+
             <div className="languages">
             <h2>🌍 Languages</h2>
             <div className="language-item">
@@ -52,7 +54,7 @@ const AboutMeWindow = ({ closeWindow }) => {
             
             <div className="certificate-item">
                 <span className="cert">ITStep Junior Academy Diploma</span>
-                <a href="/certificates/itstep_diploma.pdf" download className="download-btn">⬇ Download</a>
+                <a href="/certificates/it1diploma.pdf" download className="download-btn">⬇ Download</a>
             </div>
 
             <div className="certificate-item">
