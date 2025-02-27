@@ -109,8 +109,8 @@ const SkillsWindow = ({ closeWindow }) => {
       <div className="window-body">
         {skillsData.map((section) => (
           <div key={section.category}>
-            <button className="category-btn" onClick={() => toggleCategory(section.category)}>
-              {openCategories[section.category] ? "🔽" : ""} {section.category}
+            <button className={`category-btn ${openCategories[section.category] ? "open" : ""}`} onClick={() => toggleCategory(section.category)}>
+              {openCategories[section.category] ? "" : ""} {section.category}
             </button>
             {openCategories[section.category] && (
               <ul className="skill-list">

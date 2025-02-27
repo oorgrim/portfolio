@@ -40,10 +40,16 @@ body {
     transition: transform 0.2s ease;
 }
 
-.category-btn.open::before {
-    content: "🔽";
-    transform: rotate(90deg);
+.category-btn::before {
+    content: "▶";
+    margin-right: 8px;
+    transition: transform 0.2s ease;
 }
+
+.category-btn.open::before {
+    content: "▼";
+}
+
 
 .skill-list {
     list-style-type: none;
